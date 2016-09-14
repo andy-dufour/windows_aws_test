@@ -1,0 +1,6 @@
+name 'windows_aws_test'
+maintainer 'Andrew DuFour'
+maintainer_email 'adufour@chef.io'
+license 'Apache V2'
+description 'AWS & Windows!!'
+version '0.1.0'

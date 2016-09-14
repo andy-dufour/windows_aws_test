@@ -1,0 +1,98 @@
+I, [2016-09-13T23:26:29.036608 #58325]  INFO -- Kitchen: -----> Starting Kitchen (v1.11.1)
+I, [2016-09-13T23:26:30.817050 #58325]  INFO -- Kitchen: -----> Creating <default-windows-2008r2>...
+I, [2016-09-13T23:26:30.818135 #58325]  INFO -- Kitchen: -----> Converging <default-windows-2008r2>...
+E, [2016-09-13T23:30:27.131032 #58325] ERROR -- Kitchen: ------Exception-------
+E, [2016-09-13T23:30:27.131067 #58325] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-09-13T23:30:27.131092 #58325] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Failed to complete #converge action: [[WinRM::FS::Core::FileTransporter] Upload failed (exitcode: 3221225725)
+] on default-windows-2008r2
+E, [2016-09-13T23:30:27.131105 #58325] ERROR -- Kitchen: ----------------------
+E, [2016-09-13T23:30:27.131116 #58325] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-13T23:30:27.131126 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:187:in `report_errors'
+E, [2016-09-13T23:30:27.131136 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:178:in `run_action'
+E, [2016-09-13T23:30:27.131147 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command/action.rb:39:in `block in call'
+E, [2016-09-13T23:30:27.131170 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:30:27.131209 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command/action.rb:37:in `call'
+E, [2016-09-13T23:30:27.131236 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-09-13T23:30:27.131249 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/cli.rb:185:in `block (2 levels) in <class:CLI>'
+E, [2016-09-13T23:30:27.131261 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-09-13T23:30:27.131271 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-09-13T23:30:27.131282 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/cli.rb:326:in `invoke_task'
+E, [2016-09-13T23:30:27.131305 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-09-13T23:30:27.131316 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-09-13T23:30:27.131326 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-09-13T23:30:27.131336 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2016-09-13T23:30:27.131346 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/bin/kitchen:13:in `<top (required)>'
+E, [2016-09-13T23:30:27.131356 #58325] ERROR -- Kitchen: /opt/chefdk/bin/kitchen:18:in `load'
+E, [2016-09-13T23:30:27.131366 #58325] ERROR -- Kitchen: /opt/chefdk/bin/kitchen:18:in `<main>'
+E, [2016-09-13T23:30:27.131388 #58325] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-09-13T23:30:27.131398 #58325] ERROR -- Kitchen: -Composite Exception--
+E, [2016-09-13T23:30:27.131417 #58325] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-09-13T23:30:27.131426 #58325] ERROR -- Kitchen: Message: Failed to complete #converge action: [[WinRM::FS::Core::FileTransporter] Upload failed (exitcode: 3221225725)
+] on default-windows-2008r2
+E, [2016-09-13T23:30:27.131436 #58325] ERROR -- Kitchen: ----------------------
+E, [2016-09-13T23:30:27.131455 #58325] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-13T23:30:27.131464 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:394:in `parse_response'
+E, [2016-09-13T23:30:27.131481 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:273:in `decode_files'
+E, [2016-09-13T23:30:27.131492 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:94:in `block in upload'
+E, [2016-09-13T23:30:27.131502 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:30:27.131533 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:93:in `upload'
+E, [2016-09-13T23:30:27.131543 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:134:in `upload'
+E, [2016-09-13T23:30:27.131552 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/provisioner/base.rb:75:in `block in call'
+E, [2016-09-13T23:30:27.131562 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/base.rb:94:in `initialize'
+E, [2016-09-13T23:30:27.131571 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:470:in `new'
+E, [2016-09-13T23:30:27.131580 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:470:in `create_new_connection'
+E, [2016-09-13T23:30:27.131589 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:74:in `connection'
+E, [2016-09-13T23:30:27.131599 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2016-09-13T23:30:27.131608 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-09-13T23:30:27.131630 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-13T23:30:27.131640 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-13T23:30:27.131649 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-13T23:30:27.131658 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:30:27.131668 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-13T23:30:27.131687 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-09-13T23:30:27.131697 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-13T23:30:27.131706 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-13T23:30:27.131732 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-13T23:30:27.131741 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-13T23:30:27.131751 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-13T23:30:27.131760 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-13T23:30:27.131773 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-13T23:30:27.131784 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `call'
+E, [2016-09-13T23:30:27.131813 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-09-13T23:30:27.131824 #58325] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-09-13T23:30:27.131833 #58325] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-09-13T23:30:27.131861 #58325] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-09-13T23:30:27.131870 #58325] ERROR -- Kitchen: Message: Failed to complete #converge action: [[WinRM::FS::Core::FileTransporter] Upload failed (exitcode: 3221225725)
+]
+E, [2016-09-13T23:30:27.131889 #58325] ERROR -- Kitchen: ----------------------
+E, [2016-09-13T23:30:27.131898 #58325] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-13T23:30:27.131906 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:394:in `parse_response'
+E, [2016-09-13T23:30:27.131916 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:273:in `decode_files'
+E, [2016-09-13T23:30:27.131925 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:94:in `block in upload'
+E, [2016-09-13T23:30:27.131934 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:30:27.131943 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:93:in `upload'
+E, [2016-09-13T23:30:27.131966 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:134:in `upload'
+E, [2016-09-13T23:30:27.131976 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/provisioner/base.rb:75:in `block in call'
+E, [2016-09-13T23:30:27.131986 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/base.rb:94:in `initialize'
+E, [2016-09-13T23:30:27.131995 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:470:in `new'
+E, [2016-09-13T23:30:27.132004 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:470:in `create_new_connection'
+E, [2016-09-13T23:30:27.132013 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:74:in `connection'
+E, [2016-09-13T23:30:27.132022 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2016-09-13T23:30:27.132031 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-09-13T23:30:27.132054 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-13T23:30:27.132063 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-13T23:30:27.132073 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-13T23:30:27.132082 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:30:27.132091 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-13T23:30:27.132103 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-09-13T23:30:27.132113 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-13T23:30:27.132122 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-13T23:30:27.132139 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-13T23:30:27.132148 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-13T23:30:27.132157 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-13T23:30:27.132166 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-13T23:30:27.132193 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-13T23:30:27.132202 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `call'
+E, [2016-09-13T23:30:27.132211 #58325] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-09-13T23:30:27.132220 #58325] ERROR -- Kitchen: ----End Backtrace-----

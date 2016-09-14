@@ -1,0 +1,58 @@
+I, [2016-09-13T23:26:30.817107 #58325]  INFO -- default-windows-2008r2: -----> Creating <default-windows-2008r2>...
+I, [2016-09-13T23:26:30.818072 #58325]  INFO -- default-windows-2008r2: Finished creating <default-windows-2008r2> (0m0.00s).
+I, [2016-09-13T23:26:30.818151 #58325]  INFO -- default-windows-2008r2: -----> Converging <default-windows-2008r2>...
+I, [2016-09-13T23:26:30.819380 #58325]  INFO -- default-windows-2008r2: Preparing files for transfer
+I, [2016-09-13T23:26:30.819492 #58325]  INFO -- default-windows-2008r2: Preparing dna.json
+I, [2016-09-13T23:26:30.819790 #58325]  INFO -- default-windows-2008r2: Preparing current project directory as a cookbook
+I, [2016-09-13T23:26:30.822174 #58325]  INFO -- default-windows-2008r2: Removing non-cookbook files before transfer
+I, [2016-09-13T23:26:30.823468 #58325]  INFO -- default-windows-2008r2: Preparing validation.pem
+I, [2016-09-13T23:26:30.823871 #58325]  INFO -- default-windows-2008r2: Preparing client.rb
+I, [2016-09-13T23:26:40.469407 #58325]  INFO -- default-windows-2008r2: -----> Installing Chef Omnibus (12.13.37)
+I, [2016-09-13T23:26:40.469565 #58325]  INFO -- default-windows-2008r2: 
+I, [2016-09-13T23:26:41.061371 #58325]  INFO -- default-windows-2008r2: Downloading package from https://packages.chef.io/stable/windows/2012r2/chef-client-12.13.37-1-x64.msi
+I, [2016-09-13T23:26:41.061561 #58325]  INFO -- default-windows-2008r2: 
+I, [2016-09-13T23:26:58.345325 #58325]  INFO -- default-windows-2008r2: Download complete.
+I, [2016-09-13T23:26:58.345447 #58325]  INFO -- default-windows-2008r2: 
+I, [2016-09-13T23:27:06.333000 #58325]  INFO -- default-windows-2008r2: Successfully verified C:\Users\ADMINI~1\AppData\Local\Temp\chef-12.13.37.msi
+I, [2016-09-13T23:27:06.333127 #58325]  INFO -- default-windows-2008r2: 
+I, [2016-09-13T23:27:06.333164 #58325]  INFO -- default-windows-2008r2: Installing Chef Omnibus package C:\Users\ADMINI~1\AppData\Local\Temp\chef-12.13.37.msi
+I, [2016-09-13T23:27:06.333184 #58325]  INFO -- default-windows-2008r2: 
+I, [2016-09-13T23:28:28.468046 #58325]  INFO -- default-windows-2008r2: Installation complete
+I, [2016-09-13T23:28:28.468161 #58325]  INFO -- default-windows-2008r2: 
+I, [2016-09-13T23:28:38.497036 #58325]  INFO -- default-windows-2008r2: Transferring files to <default-windows-2008r2>
+E, [2016-09-13T23:30:27.129513 #58325] ERROR -- default-windows-2008r2: Converge failed on instance <default-windows-2008r2>.
+E, [2016-09-13T23:30:27.129639 #58325] ERROR -- default-windows-2008r2: ------Exception-------
+E, [2016-09-13T23:30:27.129656 #58325] ERROR -- default-windows-2008r2: Class: WinRM::FS::Core::FileTransporterFailed
+E, [2016-09-13T23:30:27.129667 #58325] ERROR -- default-windows-2008r2: Message: [WinRM::FS::Core::FileTransporter] Upload failed (exitcode: 3221225725)
+
+E, [2016-09-13T23:30:27.129680 #58325] ERROR -- default-windows-2008r2: ----------------------
+E, [2016-09-13T23:30:27.129689 #58325] ERROR -- default-windows-2008r2: ------Backtrace-------
+E, [2016-09-13T23:30:27.129706 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:394:in `parse_response'
+E, [2016-09-13T23:30:27.129715 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:273:in `decode_files'
+E, [2016-09-13T23:30:27.129724 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:94:in `block in upload'
+E, [2016-09-13T23:30:27.129748 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:30:27.129757 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-fs-0.4.3/lib/winrm-fs/core/file_transporter.rb:93:in `upload'
+E, [2016-09-13T23:30:27.129765 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:134:in `upload'
+E, [2016-09-13T23:30:27.129774 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/provisioner/base.rb:75:in `block in call'
+E, [2016-09-13T23:30:27.129789 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/base.rb:94:in `initialize'
+E, [2016-09-13T23:30:27.129810 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:470:in `new'
+E, [2016-09-13T23:30:27.129819 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:470:in `create_new_connection'
+E, [2016-09-13T23:30:27.129844 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:74:in `connection'
+E, [2016-09-13T23:30:27.129853 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2016-09-13T23:30:27.129862 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-09-13T23:30:27.129871 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-13T23:30:27.129880 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-13T23:30:27.129889 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-13T23:30:27.129907 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:30:27.129936 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-13T23:30:27.129945 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-09-13T23:30:27.129953 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-13T23:30:27.129962 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-13T23:30:27.129971 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-13T23:30:27.129979 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-13T23:30:27.129988 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-13T23:30:27.129996 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-13T23:30:27.130005 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-13T23:30:27.130013 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `call'
+E, [2016-09-13T23:30:27.130022 #58325] ERROR -- default-windows-2008r2: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-09-13T23:30:27.130052 #58325] ERROR -- default-windows-2008r2: ----End Backtrace-----

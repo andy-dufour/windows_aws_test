@@ -1,0 +1,31 @@
+I, [2016-09-13T22:16:52.145463 #52387]  INFO -- default-windows-2012r2sp1: -----> Creating <default-windows-2012r2sp1>...
+E, [2016-09-13T22:16:55.457403 #52387] ERROR -- default-windows-2012r2sp1: Search returned 0 images.
+E, [2016-09-13T22:16:55.457633 #52387] ERROR -- default-windows-2012r2sp1: Create failed on instance <default-windows-2012r2sp1>.
+E, [2016-09-13T22:16:55.457799 #52387] ERROR -- default-windows-2012r2sp1: ------Exception-------
+E, [2016-09-13T22:16:55.457823 #52387] ERROR -- default-windows-2012r2sp1: Class: RuntimeError
+E, [2016-09-13T22:16:55.457838 #52387] ERROR -- default-windows-2012r2sp1: Message: Neither image_id nor an image_search specified for instance default-windows-2012r2sp1! Please specify one or the other.
+E, [2016-09-13T22:16:55.457852 #52387] ERROR -- default-windows-2012r2sp1: ----------------------
+E, [2016-09-13T22:16:55.457864 #52387] ERROR -- default-windows-2012r2sp1: ------Backtrace-------
+E, [2016-09-13T22:16:55.457877 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-ec2-1.1.0/lib/kitchen/driver/ec2.rb:245:in `image'
+E, [2016-09-13T22:16:55.457890 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-ec2-1.1.0/lib/kitchen/driver/ec2.rb:268:in `actual_platform'
+E, [2016-09-13T22:16:55.457904 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-ec2-1.1.0/lib/kitchen/driver/ec2.rb:295:in `update_username'
+E, [2016-09-13T22:16:55.457916 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-ec2-1.1.0/lib/kitchen/driver/ec2.rb:163:in `create'
+E, [2016-09-13T22:16:55.457930 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-13T22:16:55.457943 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-13T22:16:55.457956 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-13T22:16:55.457969 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-13T22:16:55.457981 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-13T22:16:55.458000 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T22:16:55.458014 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-13T22:16:55.458026 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-13T22:16:55.458068 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-13T22:16:55.458081 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-13T22:16:55.458093 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-13T22:16:55.458106 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-13T22:16:55.458119 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-13T22:16:55.458131 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-13T22:16:55.458155 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-13T22:16:55.458170 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-13T22:16:55.458183 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `call'
+E, [2016-09-13T22:16:55.458196 #52387] ERROR -- default-windows-2012r2sp1: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-09-13T22:16:55.458208 #52387] ERROR -- default-windows-2012r2sp1: ----End Backtrace-----

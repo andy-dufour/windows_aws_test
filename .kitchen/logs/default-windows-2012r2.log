@@ -1,0 +1,3 @@
+I, [2016-09-13T22:28:36.030641 #56830]  INFO -- default-windows-2012r2: -----> Destroying <default-windows-2012r2>...
+I, [2016-09-13T22:28:36.442808 #56830]  INFO -- default-windows-2012r2: EC2 instance <i-5cc3af6d> destroyed.
+I, [2016-09-13T22:28:36.443716 #56830]  INFO -- default-windows-2012r2: Finished destroying <default-windows-2012r2> (0m0.41s).

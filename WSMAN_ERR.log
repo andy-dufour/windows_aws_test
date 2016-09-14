@@ -1,0 +1,100 @@
+I, [2016-09-13T23:21:09.149432 #58205]  INFO -- Kitchen: -----> Starting Kitchen (v1.11.1)
+I, [2016-09-13T23:21:11.077472 #58205]  INFO -- Kitchen: -----> Creating <default-windows-2008r2>...
+E, [2016-09-13T23:25:47.636630 #58205] ERROR -- Kitchen: ------Exception-------
+E, [2016-09-13T23:25:47.636670 #58205] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-09-13T23:25:47.636690 #58205] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Failed to complete #create action: [[WSMAN ERROR CODE: 2150858793]: <f:WSManFault Code='2150858793' Machine='ec2-54-205-137-119.compute-1.amazonaws.com' xmlns:f='http://schemas.microsoft.com/wbem/wsman/1/wsmanfault'><f:Message>The WS-Management service cannot complete the operation within the time specified in OperationTimeout.  </f:Message></f:WSManFault>] on default-windows-2008r2
+E, [2016-09-13T23:25:47.636706 #58205] ERROR -- Kitchen: ----------------------
+E, [2016-09-13T23:25:47.636721 #58205] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-13T23:25:47.636734 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:187:in `report_errors'
+E, [2016-09-13T23:25:47.636749 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:178:in `run_action'
+E, [2016-09-13T23:25:47.636764 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command/action.rb:39:in `block in call'
+E, [2016-09-13T23:25:47.636778 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:25:47.636791 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command/action.rb:37:in `call'
+E, [2016-09-13T23:25:47.636806 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-09-13T23:25:47.636820 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/cli.rb:185:in `block (2 levels) in <class:CLI>'
+E, [2016-09-13T23:25:47.636834 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-09-13T23:25:47.636848 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-09-13T23:25:47.636899 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/cli.rb:326:in `invoke_task'
+E, [2016-09-13T23:25:47.636914 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-09-13T23:25:47.636928 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-09-13T23:25:47.636942 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-09-13T23:25:47.636956 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2016-09-13T23:25:47.636969 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/bin/kitchen:13:in `<top (required)>'
+E, [2016-09-13T23:25:47.636983 #58205] ERROR -- Kitchen: /opt/chefdk/bin/kitchen:18:in `load'
+E, [2016-09-13T23:25:47.636996 #58205] ERROR -- Kitchen: /opt/chefdk/bin/kitchen:18:in `<main>'
+E, [2016-09-13T23:25:47.637009 #58205] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-09-13T23:25:47.637023 #58205] ERROR -- Kitchen: -Composite Exception--
+E, [2016-09-13T23:25:47.637036 #58205] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-09-13T23:25:47.637049 #58205] ERROR -- Kitchen: Message: Failed to complete #create action: [[WSMAN ERROR CODE: 2150858793]: <f:WSManFault Code='2150858793' Machine='ec2-54-205-137-119.compute-1.amazonaws.com' xmlns:f='http://schemas.microsoft.com/wbem/wsman/1/wsmanfault'><f:Message>The WS-Management service cannot complete the operation within the time specified in OperationTimeout.  </f:Message></f:WSManFault>] on default-windows-2008r2
+E, [2016-09-13T23:25:47.637072 #58205] ERROR -- Kitchen: ----------------------
+E, [2016-09-13T23:25:47.637088 #58205] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-13T23:25:47.637101 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/response_handler.rb:64:in `raise_if_wsman_fault'
+E, [2016-09-13T23:25:47.637115 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/response_handler.rb:51:in `raise_if_error'
+E, [2016-09-13T23:25:47.637129 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/response_handler.rb:35:in `parse_to_xml'
+E, [2016-09-13T23:25:47.637143 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/transport.rb:200:in `send_request'
+E, [2016-09-13T23:25:47.637157 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/winrm_service.rb:492:in `send_message'
+E, [2016-09-13T23:25:47.637170 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/winrm_service.rb:153:in `open_shell'
+E, [2016-09-13T23:25:47.637234 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/command_executor.rb:72:in `block in open'
+E, [2016-09-13T23:25:47.637248 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/command_executor.rb:222:in `retryable'
+E, [2016-09-13T23:25:47.637262 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/command_executor.rb:71:in `open'
+E, [2016-09-13T23:25:47.637276 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/winrm_service.rb:359:in `create_executor'
+E, [2016-09-13T23:25:47.637289 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:339:in `session'
+E, [2016-09-13T23:25:47.637303 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:140:in `wait_until_ready'
+E, [2016-09-13T23:25:47.637316 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-ec2-1.1.0/lib/kitchen/driver/ec2.rb:212:in `create'
+E, [2016-09-13T23:25:47.637330 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-13T23:25:47.637344 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-13T23:25:47.637357 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-13T23:25:47.637371 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-13T23:25:47.637384 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-13T23:25:47.637398 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:25:47.637411 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-13T23:25:47.637425 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-13T23:25:47.637438 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-13T23:25:47.637452 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-13T23:25:47.637471 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-13T23:25:47.637486 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-13T23:25:47.637543 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-13T23:25:47.637557 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-13T23:25:47.637571 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-13T23:25:47.637584 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-13T23:25:47.637598 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `call'
+E, [2016-09-13T23:25:47.637611 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-09-13T23:25:47.637638 #58205] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-09-13T23:25:47.637649 #58205] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-09-13T23:25:47.637661 #58205] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-09-13T23:25:47.637673 #58205] ERROR -- Kitchen: Message: Failed to complete #create action: [[WSMAN ERROR CODE: 2150858793]: <f:WSManFault Code='2150858793' Machine='ec2-54-205-137-119.compute-1.amazonaws.com' xmlns:f='http://schemas.microsoft.com/wbem/wsman/1/wsmanfault'><f:Message>The WS-Management service cannot complete the operation within the time specified in OperationTimeout.  </f:Message></f:WSManFault>]
+E, [2016-09-13T23:25:47.637685 #58205] ERROR -- Kitchen: ----------------------
+E, [2016-09-13T23:25:47.637697 #58205] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-09-13T23:25:47.637709 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/response_handler.rb:64:in `raise_if_wsman_fault'
+E, [2016-09-13T23:25:47.637721 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/response_handler.rb:51:in `raise_if_error'
+E, [2016-09-13T23:25:47.637733 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/response_handler.rb:35:in `parse_to_xml'
+E, [2016-09-13T23:25:47.637745 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/http/transport.rb:200:in `send_request'
+E, [2016-09-13T23:25:47.637757 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/winrm_service.rb:492:in `send_message'
+E, [2016-09-13T23:25:47.637769 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/winrm_service.rb:153:in `open_shell'
+E, [2016-09-13T23:25:47.637781 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/command_executor.rb:72:in `block in open'
+E, [2016-09-13T23:25:47.637817 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/command_executor.rb:222:in `retryable'
+E, [2016-09-13T23:25:47.637830 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/command_executor.rb:71:in `open'
+E, [2016-09-13T23:25:47.637842 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/winrm-1.8.1/lib/winrm/winrm_service.rb:359:in `create_executor'
+E, [2016-09-13T23:25:47.637854 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:339:in `session'
+E, [2016-09-13T23:25:47.637870 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/transport/winrm.rb:140:in `wait_until_ready'
+E, [2016-09-13T23:25:47.637884 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-ec2-1.1.0/lib/kitchen/driver/ec2.rb:212:in `create'
+E, [2016-09-13T23:25:47.637896 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-13T23:25:47.637908 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-13T23:25:47.637920 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-13T23:25:47.637932 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-13T23:25:47.637944 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-13T23:25:47.637956 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-13T23:25:47.637968 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-13T23:25:47.637980 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-13T23:25:47.638022 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-13T23:25:47.638035 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-13T23:25:47.638048 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-13T23:25:47.638060 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-13T23:25:47.638072 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-13T23:25:47.638084 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-13T23:25:47.638096 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-13T23:25:47.638108 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.11.1/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-13T23:25:47.638120 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `call'
+E, [2016-09-13T23:25:47.638132 #58205] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/logging-2.1.0/lib/logging/diagnostic_context.rb:450:in `block in create_with_logging_context'
+E, [2016-09-13T23:25:47.638144 #58205] ERROR -- Kitchen: ----End Backtrace-----
